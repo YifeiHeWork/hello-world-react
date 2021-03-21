@@ -1,21 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-  const [dateTime, setDateTime] = useState(new Date());
-
-  setInterval(()=>{setDateTime(new Date())
-}, 1000);
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello Lezhi. Current Time is {dateTime.toLocaleDateString()} {dateTime.toLocaleTimeString()}
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
     </div>
   );
